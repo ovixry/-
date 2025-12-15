@@ -1,0 +1,28 @@
+
+num = int(input("Введите целое число: "))
+
+if num < 0:
+    result = num 
+elif num == 0:
+    result = 1
+else:
+    result = num
+
+print("Рузультат:", result)
+
+text = input("Введите строку:")
+
+has_dot_or_comma = '.' in text or ',' in text
+
+print(has_dot_or_comma)
+
+
+num_1 = int(input("Введите первое число:"))
+num_2 = int(input("Введите второе число:"))
+
+if num_1 % 3 == 0 and num_2 % 3 == 0:
+    print("True")
+elif num_1 % 3 == 0 or num_2 % 3 == 0:
+    print("Одно число не делится на 3")
+else:
+    print(False)
