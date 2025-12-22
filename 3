@@ -1,0 +1,42 @@
+minutes = int(input())
+hours = minutes // 60
+r_minutes = minutes % 60
+print(hours, r_minutes)
+
+a = int(input())
+h = 5
+b = 11
+
+if a <= h:
+    print("недосып")
+elif a >= b:
+    print("пересып")
+else:
+    print("все норм")
+
+a = int(input())
+b = int(input())
+c = int(input())
+p = (a + b + c) // 2
+S = (p * ((p - a) * (p - b) * (p - c))) ** 0.5
+print(S)
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+n = 3.14
+if a ==b and b == c and c ==d:
+    print("эта комната круглая")
+elif a == c and b == d:
+    print("эта комната прямоугольная")
+else:
+    print("эта комната треугольная")
+
+
+
+ticket = int(input())
+if (sum([int(char) for char in ticket[0:3]]) == sum([int(char) for char in ticket[3:7]])):
+    print("счастливый")
+else:
+    print("несчастный")
